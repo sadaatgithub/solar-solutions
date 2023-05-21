@@ -1,0 +1,121 @@
+{
+    "navigation":[
+        {
+            "title":"Home",
+            "href":"/"
+        },
+        {
+            "title":"About",
+            "href":"/about"
+        },
+        {
+            "title":"Services",
+            "href":"/services"
+        },
+        {
+            "title":"Projects",
+            "href":"/projects"
+        },
+        {
+            "title":"Contact",
+            "href":"/contact"
+        },
+        {
+            "title":"Faq",
+            "href":"/faq"
+        }
+    ],
+    "hero":{
+        "title":"POWER YOUR HOME WITH CLEAN, AFFORDABLE SOLAR ENERGY",
+        "subtitle":"Experience the power of the sun and reduce your energy costs with our expert solar solutions. Join the clean energy revolution today",
+        "cta":[
+            {
+                "title":"Get Free Quote",
+                "href":"/quote"
+            },
+            {
+                "title":"Know More",
+                "href":"/about"
+            }
+        ]
+    },
+    "testimonials":[
+        {
+            "name":"Rafael",
+            "designation":"Homeowner",
+            "image":"/solar-hero.jpg",
+            "text":"I am a homeowner and I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar"
+
+        },
+        {
+            "name":"Sarah",
+            "designation":"Homeowner",
+            "image":"/solar-hero.jpg",
+            "text":"I was skeptical about switching to solar, but Solar Solutions made it easy. They were knowledgeable, professional, and walked us through every step of the process. Now our energy bills are lower than ever before!"
+        },
+        {
+            "name":"John",
+            "designation":"Businessmen",
+            "image":"/solar-hero.jpg",
+            "text":"We couldn't be happier with our solar installation from Solar Solutions. They customized the system to our energy needs, and their ongoing maintenance services ensure our panels are always performing at their best. Highly recommend!"
+        },
+        {
+            "name":"Sarah",
+            "designation":"Homeowner",
+            "image":"/solar-hero.jpg",
+            "text":"I was skeptical about switching to solar, but Solar Solutions made it easy. They were knowledgeable, professional, and walked us through every step of the process. Now our energy bills are lower than ever before!"
+        },
+        {
+            "name":"John",
+            "designation":"Businessmen",
+            "image":"/solar-hero.jpg",
+            "text":"We couldn't be happier with our solar installation from Solar Solutions. They customized the system to our energy needs, and their ongoing maintenance services ensure our panels are always performing at their best. Highly recommend!"
+        }
+    ],
+    "projects":[
+        {
+            "id":1,
+            "image":"/solar-hero.jpg",
+            "text":"Project One",
+            "cta":"Read More",
+            "category":"Case Studies"
+        },
+        {
+            "id":2,
+            "image":"/solarimg.jpg",
+            "text":"Project Two",
+            "cta":"Read More",
+            "category":"Installation"
+    
+        },
+        {
+            "id":3,
+            "image":"/solar-installation.jpg",
+            "text":"Project Three",
+            "cta":"Read More",
+            "category":"Consultation"
+        },
+        {
+            "id":4,
+            "image":"/solarimg.jpg",
+            "text":"Project Four",
+            "cta":"Read More",
+            "category":"Installation"
+        },
+        {
+            "id":5,
+            "image":"/solar-hero.jpg",
+            "text":"Project Five",
+            "cta":"Read More",
+            "category":"Case Studies"
+        },
+        {
+            "id":6,
+            "image":"/solar-installation.jpg",
+            "text":"Project Six",
+            "cta":"Read More",
+            "category":"Consultation"
+        }
+    ]
+
+}
