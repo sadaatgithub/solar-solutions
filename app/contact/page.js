@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <PageWrapper>
     <PagePathBanner/>
-      <Container className="flex gap-20">
+      <Container className="flex gap-20 flex-col md:flex-row">
         <ContactFormDetails title="Dont Hesitate to contact us"/>
         <ContactForm title="Send Message"/>
       </Container>
