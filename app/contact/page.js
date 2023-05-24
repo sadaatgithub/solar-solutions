@@ -2,7 +2,6 @@ import React from 'react'
 import PagePathBanner from '../components/PagePathBanner'
 import PageWrapper from '../components/PageWrapper'
 import Container from '../components/Container'
-import Quote from '../components/Quote'
 import ContactFormDetails from '../components/Contact/ContactFormDetails'
 import ContactForm from '../components/Contact/ContactForm'
 

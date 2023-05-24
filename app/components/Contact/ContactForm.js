@@ -58,12 +58,12 @@ const ContactForm = ({title}) => {
         action=""
         className="z-10 md:w-1/2 text-gray-700 flex flex-col gap-6"
       >
-        <div className="flex  gap-2 w-full">
-          <div className="flex flex-col gap-2 w-full">
+        <div className="flex flex-col sm:flex-row  gap-2 w-full">
+          <div className="flex flex-col gap-2 sm:w-1/2 lg:w-full">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" className="border p-2 focus:outline-orange-500 " onChange={handleChange}/>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 sm:w-1/2">
           <label htmlFor="name">Mobile no</label>
           <input type="number" name="contact" className="border p-2 focus:outline-orange-500 " onChange={handleChange}/>
           </div>

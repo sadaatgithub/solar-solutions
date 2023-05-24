@@ -41,7 +41,7 @@ const Testimonial = () => {
         breakpoints={{
           240:{
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
           slidesPerGroup:1,
           },
           768: {
@@ -52,8 +52,8 @@ const Testimonial = () => {
           },
         }}
         navigation={false}
-        modules={[Pagination, Navigation, Autoplay]}
-        className="mySwiper  w-full h-full relative   group flex place-items-stretch"
+        modules={[Pagination, Navigation]}
+        className="mySwiper  w-full h-full relative overflow-hidden  group flex place-items-stretch"
       >
         {testimonials.map((data,idx) => {
           return (

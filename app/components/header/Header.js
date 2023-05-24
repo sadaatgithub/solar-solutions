@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-20 md:static flex flex-col md:px-16  px-2 shadow-md  bg-white  rounded-sm  mx-auto">
+    <div className="fixed left-0 right-0 top-0 z-20 md:static   flex flex-col md:px-16  px-2 shadow-md  bg-white  rounded-sm  mx-auto">
       {/* Logo */}
 
       <div className="grid grid-cols-6 col-span-full border-b py-4 relative">
@@ -91,7 +91,7 @@ const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
             transition={{ duration: 0.3, type: "none" }}
-            className={`hidden md:flex fixed top-0  left-0 right-0 justify-between px-20 py-2 bg-white z-20 shadow-sm items-center`}
+            className={`hidden md:flex fixed top-0  left-0 right-0 justify-between px-4 lg:px-20 py-2 bg-white z-20 shadow-sm items-center `}
           >
             <Logo />
             <NavLinks />
