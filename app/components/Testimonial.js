@@ -53,7 +53,7 @@ const Testimonial = () => {
         }}
         navigation={false}
         modules={[Pagination, Navigation, Autoplay]}
-        className="mySwiper  w-full h-full relative  border  group flex place-items-stretch"
+        className="mySwiper  w-full h-full relative   group flex place-items-stretch"
       >
         {testimonials.map((data,idx) => {
           return (

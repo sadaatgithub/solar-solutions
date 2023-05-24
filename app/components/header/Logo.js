@@ -1,6 +1,7 @@
 import { Rye,Satisfy } from 'next/font/google'
 import logo from '../../../public/solar_logo.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const rye = Rye({weight:['400'],subsets:['latin']})
 const satisfy = Satisfy({weight:['400'],subsets:['latin']})
@@ -8,7 +9,8 @@ const satisfy = Satisfy({weight:['400'],subsets:['latin']})
 
 const Logo = () => {
   return (
-    <div className="flex gap-2">
+    <div className="">
+      <Link href="/" className="flex gap-2">
       {" "}
       <Image src={logo} alt="" width={55} height={40} />
       <div className="flex flex-col">
@@ -16,6 +18,7 @@ const Logo = () => {
   <p className={`${satisfy.className} text-sm text-gray-500 font-satisfy`}>By Choudhary Engineering</p>
        
       </div>
+      </Link>
     </div>
   )
 }
