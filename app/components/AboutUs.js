@@ -8,8 +8,8 @@ import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <Container className="flex flex-col lg:flex-row gap-10 lg:gap-20 w-full  min-h-screen">
-      <div className="flex flex-col gap-6 lg:w-1/2 z-10">
+    <Container className="flex flex-col md:flex-row gap-10 lg:gap-20 w-full  min-h-screen">
+      <div className="flex flex-col gap-6 md:w-1/2 z-10">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <p className="text-orange-500 uppercase font-semibold">Who we are</p>
@@ -43,9 +43,9 @@ const AboutUs = () => {
             </ul>
           </div>
         </div>
-        <div className="pt-4 flex gap-10 items-center flex-col md:flex-row flex-wrap">
-          <Link href="/about">
-          <button className=" md:max-w-[200px] w-full self-start px-6 py-3 bg-orange-500 text-white rounded-sm relative btn_overlay">
+        <div className="pt-4 flex gap-10 items-center flex-col sm:flex-row flex-wrap">
+          <Link href="/about" className="w-full md:max-w-[200px] sm:max-w-1/2">
+          <button className="w-full self-start px-6 py-3 bg-orange-500 text-white rounded-sm relative btn_overlay">
             Know More
           </button>
           </Link>
@@ -58,13 +58,13 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-1/2  z-10 flex relative after:absolute after:content-[''] after:top-16 after:-bottom-2 md:after:-right-10 after:left-1/2 after:-z-10 after:bg-orange-300/20">
+      <div className="md:w-1/2 md:-translate-x-5 z-10 flex relative after:absolute after:content-[''] after:top-16 after:-bottom-2 md:after:-right-10 after:left-1/2 after:-z-10 after:bg-orange-300/20 ">
         <Image
           src={aboutImage}
           width={960}
           height={640}
           alt="our team"
-          className="w-full  h-[90%] self-center object-cover object-left "
+          className="w-full  h-[90%] self-center object-cover object-left  "
         />
         <div className="absolute bottom-10 left-10 md:bottom-10 bg-white/90 border border-white backdrop-blur md:-left-20 w-auto px-8 py-4 shadow-2xl flex flex-col rounded-md">
             <p className="text-5xl font-bold text-orange-500 drop-shadow-md">25</p>

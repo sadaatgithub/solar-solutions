@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { usePathname } from "next/navigation";
 
 
-const NavLinks = () => {
+const NavLinks = ({setMenu}) => {
     const navlink = config.navigation
     const path = usePathname()
     
@@ -13,7 +13,7 @@ const NavLinks = () => {
   return (
     <ul className='flex flex-col md:flex-row gap-4 md:gap-6 font-semibold uppercase  [&>li]:cursor-pointer [&>li]:py-1 text-sky-900 [&>li:hover]:text-orange-500'>
             {navlink.map(link => 
-            <li key={link.href}>
+            <li key={link.href} onClick={() => setMenu(false)}>
                 <Link href={link.href} className="relative">
                 {link.href === path && (
                     <motion.span

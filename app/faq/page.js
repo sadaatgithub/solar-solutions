@@ -1,12 +1,27 @@
 import React from 'react'
 import PageWrapper from '../components/PageWrapper'
 import Container from '../components/Container'
+import Faqs from './component/Faqs'
+import Link from 'next/link'
 
 const Faq = () => {
   return (
     <PageWrapper>
-        <Container className="min-h-screen">
-            faq
+        <Container className="min-h-screen flex flex-col gap-20 justify-center items-center">
+          <div className="flex flex-col gap-4 items-center lg:w-2/3">
+            <h2 className="text-5xl font-bold">FAQs</h2>
+            <p className="text-xl text-gray-500 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+
+            <Faqs/>
+
+            <div className="flex flex-col gap-6 items-center justify-center">
+              <div className="flex flex-col gap-4 items-center justify-center">
+                <h4 className="text-[32px] font-bold">Still have a question?</h4>
+                <p class="text-xl">Feel free to contact us</p>
+              </div>
+              <Link href="/contact" className="px-6 py-3 border border-orange-500 w-[104px]"><button>Contact</button></Link>
+            </div>
         </Container>
     </PageWrapper>
   )

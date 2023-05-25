@@ -34,7 +34,7 @@ const Header = () => {
     <div className="fixed left-0 right-0 top-0 z-20 md:static   flex flex-col md:px-16  px-2 shadow-md  bg-white  rounded-sm  mx-auto">
       {/* Logo */}
 
-      <div className="grid grid-cols-6 col-span-full border-b py-4 relative">
+      <div className="grid grid-cols-6 col-span-full border-b py-3 relative">
         <div className="md:col-span-full lg:col-span-2 col-span-full">
           <Logo />
         </div>
@@ -70,14 +70,12 @@ const Header = () => {
       </div>
 
       {/* Navlink */}
-      <div className={`${burgerMenu? "[grid-template-rows:1fr]":"[grid-template-rows:0fr]"} grid overflow-hidden md:flex  transition-[grid-template-rows] w-full`}>
+      <div className={`${burgerMenu? "[grid-template-rows:1fr]":"[grid-template-rows:0fr]"} grid  md:flex  transition-[grid-template-rows] duration-500 w-full`}>
 
       <div
-        className={` ${
-          burgerMenu ? "flex" : "hidden md:flex"
-        }  justify-between md:items-center flex-col md:flex-row p-1 gap-y-8 w-full`}
+        className={` flex flex-col md:flex-row justify-between md:items-center gap-y-6 w-full overflow-hidden`}
       >
-        <NavLinks />
+        <NavLinks setMenu={setBurgerMenu}/>
 
         <SocialIcons />
       </div>
