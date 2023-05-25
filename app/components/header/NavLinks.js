@@ -11,7 +11,7 @@ const NavLinks = ({setMenu}) => {
     
 
   return (
-    <ul className='flex flex-col md:flex-row gap-4 md:gap-6 font-semibold uppercase  [&>li]:cursor-pointer [&>li]:py-1 text-sky-900 [&>li:hover]:text-orange-500'>
+    <ul className='flex flex-col md:flex-row gap-4 md:gap-6 font-semibold uppercase p-1 [&>li]:cursor-pointer [&>li]:py-1 text-sky-900 [&>li:hover]:text-orange-500'>
             {navlink.map(link => 
             <li key={link.href} onClick={() => setMenu(false)}>
                 <Link href={link.href} className="relative">

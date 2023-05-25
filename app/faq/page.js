@@ -3,14 +3,17 @@ import PageWrapper from '../components/PageWrapper'
 import Container from '../components/Container'
 import Faqs from './component/Faqs'
 import Link from 'next/link'
+import PagePathBanner from '../components/PagePathBanner'
 
 const Faq = () => {
+  const subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
   return (
     <PageWrapper>
+      <PagePathBanner subtitle={subtitle}/>
         <Container className="min-h-screen flex flex-col gap-20 justify-center items-center">
-          <div className="flex flex-col gap-4 items-center lg:w-2/3">
+          <div className=" flex-col gap-4 items-center lg:w-2/3 hidden">
             <h2 className="text-5xl font-bold">FAQs</h2>
-            <p className="text-xl text-gray-500 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <p className="text-xl text-gray-500 text-center"></p>
           </div>
 
             <Faqs/>
