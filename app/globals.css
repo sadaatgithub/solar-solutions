@@ -5,3 +5,24 @@
 .btn_overlay {
   @apply after:absolute after:content-[''] after:inset-0 after:bg-sky-950 after:-z-[1] z-10 after:scale-x-0 after:origin-right after:hover:origin-left after:hover:scale-x-100 after:transition-transform after:duration-500 after:ease-ease-btn ;
 }
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 

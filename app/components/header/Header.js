@@ -73,7 +73,7 @@ const Header = () => {
       <div className={`${burgerMenu? "[grid-template-rows:1fr]":"[grid-template-rows:0fr]"} grid  md:flex  transition-[grid-template-rows] duration-500 w-full`}>
 
       <div
-        className={` flex flex-col md:flex-row justify-between md:items-center gap-y-6 w-full overflow-hidden`}
+        className={` flex flex-col md:flex-row justify-between md:items-center gap-y-6 w-full overflow-hidden md:overflow-visible`}
       >
         <NavLinks setMenu={setBurgerMenu}/>
 

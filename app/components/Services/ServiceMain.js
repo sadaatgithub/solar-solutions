@@ -22,7 +22,7 @@ const Services = () => {
             Our licensed professionals ensure a seamless installation process and long-term performance optimization.
             </p>
             <div className="pt-8">
-              <button>Know More</button>
+              <button className="text-orange-500">Read More</button>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Services = () => {
               <h5 className="pb-2 text-2xl font-bold text-sky-800">HT-LT panels</h5>
               <p className="text-gray-500">We offers installation and maintenance services for both LT and HT solar systems</p>
               <div className="pt-6 mt-auto">
-                <button className="">Read More</button>
+                <button className="text-orange-500">Read More</button>
               </div>
             </div>
 
@@ -76,17 +76,17 @@ const Services = () => {
               <h5 className="pb-2 text-2xl font-bold text-sky-800 ">Consultant</h5>
               <p className="text-gray-500">We provide consulting and design services to assist customers in planning and implementing customized solar energy solutions.</p>
               <div className="pt-6">
-                <button className="">Read More</button>
+                <button className="text-orange-500">Read More</button>
               </div>
             </div>
           </div>
 
         <div className="flex flex-col-reverse h-full border sm:flex-row   rounded-md shadow-xl">
-            <div className="flex flex-col justify-center w-full sm:w-1/2 p-6  ">
-            <h5 className="pb-2 text-2xl font-bold text-sky-800">Solar Equipments Supply</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div className="pt-6">
-                <button>Read More</button>
+            <div className="flex flex-col justify-center w-full sm:w-1/2 p-6 ">
+            <h5 className="pb-2 text-2xl font-bold text-sky-800 mt-auto">Solar Equipments Supply</h5>
+            <p className="text-gray-500">Streamlined Material Supply for Reliable Solar Installations</p>
+            <div className="pt-6 mt-auto">
+                <button className="text-orange-500">Read More</button>
             </div>
 
 

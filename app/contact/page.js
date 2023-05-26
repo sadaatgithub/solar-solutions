@@ -11,7 +11,7 @@ const Contact = () => {
     <PagePathBanner/>
       <Container className="flex gap-20 flex-col md:flex-row">
         <ContactFormDetails title="Dont Hesitate to contact us"/>
-        <ContactForm title="Send Message"/>
+        <ContactForm title="Send Message" className="md:w-1/2 w-full"/>
       </Container>
     </PageWrapper>
   )
