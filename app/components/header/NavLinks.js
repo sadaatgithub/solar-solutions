@@ -24,13 +24,13 @@ const NavLinks = ({ setMenu }) => {
             <motion.ul initial={{y:20, opacity:0}} animate={{y:10,opacity:1}} exit={{y:20, opacity:0}} className="flex rounded-sm shadow-2xl absolute left-0 top-8 z-20 w-[200px] bg-white font-normal  flex-col text-gray-500 normal-case text-base">
               {" "}
               {link.submenu.map((sublink, idx) => (
-                <li key={idx} className="hover:text-orange-500 hover:bg-gray-100 p-2">
+                <li key={idx} className="hover:text-orange-500 hover:bg-gray-100">
                   <Link
                     href={`/services/${sublink
                       .split(" ")
                       .join("-")
                       .toLowerCase()}`}
-                      className=""
+                      className="block p-2"
                   >
                     {sublink}
                   </Link>
@@ -55,40 +55,7 @@ const NavLinks = ({ setMenu }) => {
           </li>
         )
 
-        // <li
-        //   key={link.href}
-        //   onClick={() => setMenu(false)}
-          // className={`${
-          //   link.href === path ? "text-orange-500" : ""
-          // } group hover:text-orange-400 relative`}
-        // >
-        //   <Link href={link.href} className="relative ">
-        //     {link.href === path && (
-        //       <motion.span
-        //         layoutId="underline"
-        //         className="absolute left-0 -bottom-[10px] block h-[3px] w-full bg-orange-400"
-        //       />
-        //     )}
-        //     {link.title}
-        //   </Link>
-          // {link.submenu && (
-          //   <ul className=" flex border-t-2 translate-y-4 group-hover:translate-y-1  rounded-sm shadow-2xl absolute top-0 left-0 z-[999] bg-white p-4 font-normal  flex-col gap-2 text-gray-500 normal-case text-base">
-          //     {" "}
-          //     {link.submenu.map((sublink, idx) => (
-          //       <li key={idx} className="hover:text-orange-500">
-          //         <Link
-          //           href={`/services/${sublink
-          //             .split(" ")
-          //             .join("-")
-          //             .toLowerCase()}`}
-          //         >
-          //           {sublink}
-          //         </Link>
-          //       </li>
-          //     ))}
-          //   </ul>
-          // )}
-        // </li>
+        
       )}
     </ul>
   );

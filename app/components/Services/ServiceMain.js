@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import aboutImage from "../../../public/solar-installation.jpg";
+import Link from 'next/link';
 
 const Services = () => {
   return (
@@ -22,7 +23,7 @@ const Services = () => {
             Our licensed professionals ensure a seamless installation process and long-term performance optimization.
             </p>
             <div className="pt-8">
-              <button className="text-orange-500">Read More</button>
+              <button className="text-orange-500"><Link href="/services/solar-work">Read More</Link></button>
             </div>
           </div>
         </div>
@@ -51,7 +52,7 @@ const Services = () => {
               <h5 className="pb-2 text-2xl font-bold text-sky-800">HT-LT panels</h5>
               <p className="text-gray-500">We offers installation and maintenance services for both LT and HT solar systems</p>
               <div className="pt-6 mt-auto">
-                <button className="text-orange-500">Read More</button>
+                <button className="text-orange-500"><Link href="/services/ht-lt-panels">Read More</Link></button>
               </div>
             </div>
 
@@ -76,7 +77,7 @@ const Services = () => {
               <h5 className="pb-2 text-2xl font-bold text-sky-800 ">Consultant</h5>
               <p className="text-gray-500">We provide consulting and design services to assist customers in planning and implementing customized solar energy solutions.</p>
               <div className="pt-6">
-                <button className="text-orange-500">Read More</button>
+                <button className="text-orange-500"><Link href="/services/consultant">Read More</Link></button>
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@ const Services = () => {
             <h5 className="pb-2 text-2xl font-bold text-sky-800 mt-auto">Solar Equipments Supply</h5>
             <p className="text-gray-500">Streamlined Material Supply for Reliable Solar Installations</p>
             <div className="pt-6 mt-auto">
-                <button className="text-orange-500">Read More</button>
+                <button className="text-orange-500"><Link href="/services/solar-material-supply">Read More</Link></button>
             </div>
 
 
