@@ -5,7 +5,7 @@ import Container from './Container'
 import Link from 'next/link'
 import Portal from '../portal/Portal'
 import FreeQuote from '../modal/FreeQuote'
-
+import { AnimatePresence } from 'framer-motion'
 
 const Hero = () => {
 const hero = config.hero
@@ -23,10 +23,12 @@ const [openModal,setOpenModal] = useState(false)
             <button className='border px-6 py-3 rounded-sm transition-all duration-200 btn_overlay'><Link href={hero.cta[1].href}>{hero.cta[1].title}</Link></button>
         </div>
         </div>
+        <AnimatePresence>
         {openModal && 
         <Portal>
           <FreeQuote closeModal={setOpenModal}/>
           </Portal>}
+          </AnimatePresence>
         
     </Container>
   )

@@ -42,7 +42,6 @@ const ContactForm = ({title,className,closeModal}) => {
         isLoading: false,
         error: error.message,
       }));
-      console.log(error)
     }
   };
   const handleChange = (e) =>{
@@ -100,7 +99,7 @@ const ContactForm = ({title,className,closeModal}) => {
             I accept <a href="#">Terms</a>
           </label>
         </div> */}
-        <button className="self-center rounded-sm px-6 py-3  relative btn_overlay  bg-orange-500 text-white flex justify-center items-center">
+        <button className="self-center rounded-sm px-6 py-3 w-full relative btn_overlay  bg-orange-500 text-white flex justify-center items-center">
         {isLoading ? (
             <ImSpinner8 className="animate-spin self-center" />
           ) : 

@@ -7,7 +7,7 @@ const RecentProject = () => {
     const projects = config.projects
   return (
     <div className="flex flex-col gap-20 py-20">
-        <div className="flex flex-col gap-4 px-20">
+        <div className="flex flex-col gap-4 px-4 lg:px-20">
             <p className="text-orange-500 uppercase font-semibold">What we Do</p>
             <h2 className="text-5xl font-bold text-gray-700 capitalize">Recent Projects</h2>
         </div>

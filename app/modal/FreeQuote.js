@@ -1,15 +1,20 @@
 import React from 'react'
 import ContactForm from '../components/Contact/ContactForm'
 import { FaTimes } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+
 const FreeQuote = ({closeModal}) => {
   return (
-    <div className="fixed inset-0 bg-black/70 z-30 grid place-items-center backdrop-blur-sm">
-        <FaTimes onClick={() => closeModal(false)} color='white' className="absolute right-10 top-10 text-black cursor-pointer text-2xl"/>
-        <div className="bg-white w-[90%] md:w-1/2 py-16 flex justify-center items-center rounded-md">
-        <ContactForm title="Get A Quote" className="w-2/3" closeModal={closeModal}/>
-        </div>
-    </div>
+    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.3}} className="fixed inset-0 bg-black/70 z-30 grid place-items-center backdrop-blur-sm">
+        <motion.div initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{delay:0.2}} className="bg-white w-[90%] h-[95%] md:w-1/2 p-10 flex flex-col justify-center items-center rounded-sm gap-12 relative">
+        <FaTimes onClick={() => closeModal(false)} color='orange' className="absolute right-10 top-10 text-black cursor-pointer text-2xl"/>
+          <p className="text-lg text-orange-500">Submit following details, We will get back to you soon</p>
+        <ContactForm title="Get A Quote" className="w-full" closeModal={closeModal}/>
+        </motion.div>
+    </motion.div>
   )
 }
 
 export default FreeQuote
+
+// 

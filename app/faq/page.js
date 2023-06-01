@@ -6,7 +6,7 @@ import Link from 'next/link'
 import PagePathBanner from '../components/PagePathBanner'
 
 const Faq = () => {
-  const subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  const subtitle = "Find Answers to Your Solar Queries"
   return (
     <PageWrapper>
       <PagePathBanner subtitle={subtitle}/>

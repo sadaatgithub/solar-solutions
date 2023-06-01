@@ -106,12 +106,16 @@ const services = [
       {
         id:1,
         heading:"Comprehensive Assessment",
-        desc:`During a solar consultation, our knowledgeable consultants will conduct a comprehensive assessment of your property, taking into account factors such as roof orientation, shading, available space, and energy consumption patterns. This assessment allows us to understand your unique requirements and design a solar system that maximizes energy production and efficiency.`
+        desc:`During a solar consultation, our knowledgeable consultants will conduct a comprehensive assessment of your property, taking into account factors such as roof orientation, shading, available space, and energy consumption patterns. This assessment allows us to understand your unique requirements and design a solar system that maximizes energy production and efficiency.`,
+        img:"/assessment.gif",
+        // <a href="https://storyset.com/business">Business illustrations by Storyset</a>
+        // <a href="https://storyset.com/business">Business illustrations by Storyset</a>
       },
       {
         id:2,
         heading:"Customized Solar Solutions",
-        desc:`Based on the assessment, our consultants will work closely with you to develop a customized solar solution that aligns with your goals, preferences, and budget. We take into consideration your energy needs, financial objectives, and any specific requirements you may have to ensure that the proposed solar system meets your expectations.`
+        desc:`Based on the assessment, our consultants will work closely with you to develop a customized solar solution that aligns with your goals, preferences, and budget. We take into consideration your energy needs, financial objectives, and any specific requirements you may have to ensure that the proposed solar system meets your expectations.`,
+        
       },
       {
         id:3,
@@ -160,11 +164,11 @@ const Page = () => {
             {service.content.map(content =>{
               return (
                 <div key={content.id} className={`${content.id % 2 === 0? "md:flex-row-reverse":""} flex items-center flex-col-reverse md:flex-row gap-8  mx-auto`}>
-                  <div className="flex flex-col max-w-xl md:w-1/2 gap-4">
+                  <div className="flex flex-col md:w-1/2 gap-4">
                 <h3 className="text-2xl font-bold text-gray-700"><span className="text-5xl text-orange-400 mr-3">{content.id}</span>{content.heading}</h3>
                 <p className="text-gray-500">{content.desc}</p>
                 </div>
-                <Image src={content.img} width={640} height={480} className=" max-w-xl lg:w-1/2" alt=""/>
+                <Image src={content.img} width={640} height={480} className="w-full  md:w-1/2" alt=""/>
                 </div>
               )
             })}
