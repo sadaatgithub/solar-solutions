@@ -5,6 +5,15 @@ import Container from '../components/Container'
 import ContactFormDetails from '../components/Contact/ContactFormDetails'
 import ContactForm from '../components/Contact/ContactForm'
 
+
+export const metadata = {
+  title: {
+    default: 'Solar Solutions',
+    template: 'Solar Solutions',
+    absolute: 'Contact | Solar Solutions',
+  },
+  description: 'By Choudhary Engineering',
+};
 const Contact = () => {
   return (
     <PageWrapper>

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState,useRef } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import useOutsideClick from "@/config/hooks/useOutSIdeClick";
+import { container, textVariant } from "@/lib/animation";
 
 const NavLinks = ({ setMenu }) => {
   const ref = useRef();
@@ -17,10 +18,10 @@ const NavLinks = ({ setMenu }) => {
   });
 
   return (
-    <ul className="flex flex-col md:flex-row gap-4 md:gap-6 font-semibold uppercase p-1 [&>li]:cursor-pointer [&>li]:py-1 text-sky-900">
-      {navlink.map((link) =>
+    <motion.ul variants={container} initial="hidden" animate="show" className="flex flex-col md:flex-row gap-4 md:gap-6 font-semibold uppercase p-1 [&>li]:cursor-pointer [&>li]:py-1 text-sky-900">
+      {navlink.map((link,idx) =>
         link.href === " " ? (
-          <li key={link.href}  ref={ref}  className={`${
+          <motion.li variants={textVariant(idx*0.1)} key={link.href}  ref={ref}  className={`${
             link.href === path ? "text-orange-500" : ""
           }  hover:text-orange-400 relative flex items-center gap-2`} onClick={()=> setSubMenu(!subMenu)}>
             {link.title} <FaChevronDown/>
@@ -29,7 +30,7 @@ const NavLinks = ({ setMenu }) => {
             <motion.ul initial={{y:20, opacity:0}} animate={{y:10,opacity:1}} exit={{y:20, opacity:0}} className="flex rounded-sm shadow-2xl absolute left-0 top-8 z-20 w-[200px] bg-white font-normal  flex-col text-gray-500 normal-case text-base">
               {" "}
               {link.submenu.map((sublink, idx) => (
-                <li key={idx} className="hover:text-orange-500 hover:bg-gray-100" onClick={() => setMenu(false)}>
+                <li  key={idx} className="hover:text-orange-500 hover:bg-gray-100" onClick={() => setMenu(false)}>
                   <Link
                     href={`/services/${sublink
                       .split(" ")
@@ -45,8 +46,8 @@ const NavLinks = ({ setMenu }) => {
           )}
           </AnimatePresence>
             
-            </li>
-        ) : (<li key={link.href} onClick={() => setMenu(false)}   className={`${
+            </motion.li>
+        ) : (<motion.li variants={textVariant(idx*0.1)} key={link.href} onClick={() => setMenu(false)}   className={`${
           link.href === path ? "text-orange-500" : ""
         } group hover:text-orange-400 relative`}><Link href={link.href} className=" relative">
             {link.href === path && (
@@ -57,12 +58,12 @@ const NavLinks = ({ setMenu }) => {
             )}
             {link.title}
           </Link>
-          </li>
+          </motion.li>
         )
 
         
       )}
-    </ul>
+    </motion.ul>
   );
 };
 

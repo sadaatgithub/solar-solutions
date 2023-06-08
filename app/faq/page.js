@@ -5,6 +5,15 @@ import Faqs from './component/Faqs'
 import Link from 'next/link'
 import PagePathBanner from '../components/PagePathBanner'
 
+
+export const metadata = {
+  title: {
+    default: 'Solar Solutions',
+    template: 'Solar Solutions',
+    absolute: 'FAQs | Solar Solutions',
+  },
+  description: 'By Choudhary Engineering',
+};
 const Faq = () => {
   const subtitle = "Find Answers to Your Solar Queries"
   return (

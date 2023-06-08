@@ -6,8 +6,20 @@ import Quote from './components/Quote'
 import Testimonial from './components/Testimonial'
 import PageWrapper from './components/PageWrapper'
 import RecentProject from './components/RecentProjects/RecentProject'
+import Testimonials from './components/Testimonials'
 
+
+export const metadata = {
+  title: {
+    default: 'Solar Solutions',
+    template: 'Solar Solutions',
+    absolute: 'Home | Solar Solutions',
+  },
+  description: 'Best Solar Solution Provider in Nagpur',
+};
 export default function Home() {
+
+  
   return (
     <>
     <PageWrapper>
@@ -16,7 +28,7 @@ export default function Home() {
     <AboutUs/>
     <OurServices/>
     <RecentProject/>
-    <Testimonial/>
+    <Testimonials/>
     <Quote/>
     </PageWrapper>
     </>

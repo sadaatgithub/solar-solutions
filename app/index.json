@@ -46,7 +46,7 @@
             "name":"Rafael",
             "designation":"Homeowner",
             "image":"/solar-hero.jpg",
-            "text":"I am a homeowner and I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar"
+            "text":"I am a homeowner and I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home. I want to have a solar panel installed in my home."
 
         },
         {
@@ -69,6 +69,12 @@
         },
         {
             "name":"John",
+            "designation":"Businessmen",
+            "image":"/solar-hero.jpg",
+            "text":"We couldn't be happier with our solar installation from Solar Solutions. They customized the system to our energy needs, and their ongoing maintenance services ensure our panels are always performing at their best. Highly recommend!"
+        },
+        {
+            "name":"Omega",
             "designation":"Businessmen",
             "image":"/solar-hero.jpg",
             "text":"We couldn't be happier with our solar installation from Solar Solutions. They customized the system to our energy needs, and their ongoing maintenance services ensure our panels are always performing at their best. Highly recommend!"

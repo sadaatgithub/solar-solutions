@@ -1,15 +1,17 @@
 import React from 'react'
+import TopSubHeading from '../common/heading/TopSubHeading'
+import DivTitle from '../common/heading/DivTitle'
 
 const ServiceHeader = () => {
   return (
     <div className="flex flex-col gap-4 items-center">
-        <p className="font-semibold text-orange-500 uppercase">What We Offer</p>
+        <TopSubHeading text="What We Offer"/>
         <div className="flex flex-col gap-6  items-center">
-          <h2 className="text-5xl font-bold text-gray-700">Our Services</h2>
-          <p>
+          <DivTitle text="Our Services"/>
+          {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
             maiores.
-          </p>
+          </p> */}
         </div>
       </div>
   )

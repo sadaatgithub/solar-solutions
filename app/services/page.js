@@ -4,6 +4,15 @@ import PagePathBanner from "../components/PagePathBanner";
 import ServiceMain from "../components/Services/ServiceMain";
 import Container from "../components/Container";
 
+
+export const metadata = {
+  title: {
+    default: 'Solar Solutions',
+    template: 'Solar Solutions',
+    absolute: 'Services | Solar Solutions',
+  },
+  description: 'By Choudhary Engineering',
+};
 const Services = () => {
   return (
     <PageWrapper>
