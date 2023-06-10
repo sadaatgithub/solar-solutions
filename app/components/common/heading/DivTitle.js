@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion as m } from 'framer-motion'
-import { textVariant, textVariant2 } from '@/lib/animation'
+import { textVariant } from '@/lib/animation'
 
 const DivTitle = ({text}) => {
   return (

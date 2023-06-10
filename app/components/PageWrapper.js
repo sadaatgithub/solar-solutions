@@ -14,24 +14,24 @@ const PageWrapper = ({children}) => {
     animate="animateState"
     exit="exitState"
     transition={{
-      duration: 0.2,
+      duration: 0.5,
     }}
     variants={{
       initialState: {
-        opacity: 0,
-        y:100,
+        // opacity: 0,
+        // y:100,
         // clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-        // clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+        clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
       },
       animateState: {
-        opacity: 1,
-        y:0,
-        // clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+        // opacity: 1,
+        // y:0,
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
       },
       exitState: {
-        // clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-        opacity:0,
-        y:100,
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+        // opacity:0,
+        // y:100,
       },
     }}>
         {children}

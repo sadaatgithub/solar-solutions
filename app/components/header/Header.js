@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
-  const burgerHandler = () => {
+  const handleBurgerMenu = () => {
     setBurgerMenu(!burgerMenu);
   };
 
@@ -62,8 +62,8 @@ const Header = () => {
           </div>
         </div>
         <button
-          className="md:hidden absolute right-5 top-1/2 -translate-y-1/2 text-2xl text-orange-500"
-          onClick={() => burgerHandler()}
+          className="md:hidden absolute right-5 top-1/2 -translate-y-1/2 text-2xl text-orange-500 z-10 p-4"
+          onClick={() => handleBurgerMenu()}
         >
           {burgerIcon}
         </button>

@@ -30,7 +30,7 @@ const Faq = () => {
             <div className="flex flex-col gap-6 items-center justify-center">
               <div className="flex flex-col gap-4 items-center justify-center">
                 <h4 className="text-[32px] font-bold">Still have a question?</h4>
-                <p class="text-xl">Feel free to contact us</p>
+                <p className="text-xl">Feel free to contact us</p>
               </div>
               <Link href="/contact" className="px-6 py-3 border border-orange-500 w-[104px]"><button>Contact</button></Link>
             </div>

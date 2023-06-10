@@ -26,7 +26,7 @@ const Testimonials = () => {
                  <div className="flex items-center  gap-4 mt-auto">
                   <Image width={80} height={80} 
                   src={testimonial.image}
-                  alt={testimonial.patient}
+                  alt={testimonial.name}
                   className="w-14 h-14 object-cover rounded-full"
                 />
                 <div className="flex flex-col">

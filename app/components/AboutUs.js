@@ -17,11 +17,11 @@ const AboutUs = () => {
     <Container className="flex flex-col md:flex-row gap-10 lg:gap-20 w-full  min-h-screen">
       <div className="flex flex-col gap-6 md:w-1/2 z-10">
         <div className="flex flex-col gap-8">
-          <m.div variants={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-4">
+          <div   className="flex flex-col gap-4">
             <TopSubHeading text="Who We Are"/>
             <div className="flex flex-col gap-6">
               <DivTitle text="Powering a brighter future through solar innovation"/>
-              <m.p variants={textVariant(0.3)} className="text-lg text-gray-500">
+              <m.p variants={textVariant(0.3)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="text-lg text-gray-500">
                 Our mission is to make solar energy accessible to everyone. We
                 believe that solar is not only good for the environment, but
                 also for our customers&apos; wallets. By helping homeowners and
@@ -29,7 +29,7 @@ const AboutUs = () => {
                 on both the planet and their bottom line.
               </m.p>
             </div>
-          </m.div>
+          </div>
           <m.div variants={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}  className="">
             <ul className="flex flex-col gap-4 text-gray-800 [&>li]:flex [&>li]:gap-2 [&>li]:items-center ">
               <m.li variants={textVariant(0.1)}>

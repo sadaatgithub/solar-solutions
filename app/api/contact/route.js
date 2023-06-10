@@ -1,13 +1,7 @@
 import { transporter, mailOption } from "@/config/nodemailer";
-
-
-
 import { NextResponse } from 'next/server';
  
 export async function POST(request) {
-    console.log("received")
-
-    // console.log(request)
 
  
 const data = await request.json();

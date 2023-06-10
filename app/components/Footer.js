@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from './header/Logo'
 import SocialIcons from './SocialIcons' 
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
                 </div>
 
             <ul className="flex w-full justify-center gap-8">
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="">Services</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
             </ul>
         
             <div className="w-full flex justify-center lg:justify-end">

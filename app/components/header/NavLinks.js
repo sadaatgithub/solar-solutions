@@ -30,7 +30,7 @@ const NavLinks = ({ setMenu }) => {
             <motion.ul initial={{y:20, opacity:0}} animate={{y:10,opacity:1}} exit={{y:20, opacity:0}} className="flex rounded-sm shadow-2xl absolute left-0 top-8 z-20 w-[200px] bg-white font-normal  flex-col text-gray-500 normal-case text-base">
               {" "}
               {link.submenu.map((sublink, idx) => (
-                <li  key={idx} className="hover:text-orange-500 hover:bg-gray-100" onClick={() => setMenu(false)}>
+                <li  key={idx} className="hover:text-orange-500 hover:bg-gray-100" onClick={() => window.innerWidth <768 && setMenu(false)}>
                   <Link
                     href={`/services/${sublink
                       .split(" ")
@@ -47,7 +47,7 @@ const NavLinks = ({ setMenu }) => {
           </AnimatePresence>
             
             </motion.li>
-        ) : (<motion.li variants={textVariant(idx*0.1)} key={link.href} onClick={() => setMenu(false)}   className={`${
+        ) : (<motion.li variants={textVariant(idx*0.1)} key={link.href} onClick={() => window.innerWidth <768 && setMenu(false)}   className={`${
           link.href === path ? "text-orange-500" : ""
         } group hover:text-orange-400 relative`}><Link href={link.href} className=" relative">
             {link.href === path && (
