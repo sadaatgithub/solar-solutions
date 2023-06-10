@@ -6,6 +6,9 @@ import { useParams } from 'next/navigation'
 import PagePathBanner from '@/app/components/PagePathBanner'
 import Image from 'next/image'
 import MaterialSupply from '../component/MaterialSupply'
+import { motion as m } from 'framer-motion'
+import { fadeIn, slideIn, textVariant } from '@/lib/animation'
+import DivTitle from '@/app/components/common/heading/DivTitle'
 
 const services = [
   {
@@ -158,17 +161,20 @@ const Page = () => {
       <Container className="min-h-screen ">{service.map(service => (
         <div key={service.id} className="flex flex-col gap-20 mx-auto ">
             <div className="flex flex-col gap-6 text-center">
-              <h2 className="text-5xl font-bold text-gray-800">{service.title}</h2>
-            <p className="text-xl text-gray-500">{service.subheading}</p>
+              <DivTitle text={service.title}/>
+            <m.p variants={textVariant(0.1)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="text-xl text-gray-500">{service.subheading}</m.p>
             </div>
             {service.content.map(content =>{
+              const isEven = content.id % 2
               return (
-                <div key={content.id} className={`${content.id % 2 === 0? "md:flex-row-reverse":""} flex items-center flex-col-reverse md:flex-row gap-8  mx-auto`}>
-                  <div className="flex flex-col md:w-1/2 gap-4">
+                <div key={content.id}  className={`${ isEven? "md:flex-row-reverse":""} flex items-center flex-col-reverse md:flex-row gap-8  mx-auto overflow-hidden`}>
+                  <m.div variants={fadeIn('left','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:false, amount:0.3}} className="flex flex-col md:w-1/2 gap-4">
                 <h3 className="text-2xl font-bold text-gray-700"><span className="text-5xl text-orange-400 mr-3">{content.id}</span>{content.heading}</h3>
                 <p className="text-gray-500">{content.desc}</p>
-                </div>
-                <Image src={content.img} width={640} height={480} className="w-full  md:w-1/2" alt=""/>
+                </m.div>
+                <m.div variants={fadeIn('right','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="md:w-1/2">
+                <Image src={content.img} width={640} height={480} className="w-full" alt=""/>
+                </m.div>
                 </div>
               )
             })}

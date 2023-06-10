@@ -9,7 +9,7 @@ import { fadeIn, slideIn } from '@/lib/animation';
 const Services = () => {
   return (
     <div className="flex gap-8 w-full flex-col lg:flex-row overflow-hidden">
-        <m.div variants={fadeIn('right','tween',0.1,0.5)} initial="hidden" whileInView="show" viewport={{once:false, amount:0.5}} className="xl:w-[45%] flex flex-col border md:w-/3 overflow-hidden shadow-xl rounded-md">
+        <m.div variants={fadeIn('right','tween',0.1,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="xl:w-[45%] flex flex-col border md:w-/3 overflow-hidden shadow-xl rounded-md">
           <div className="max-h-96 overflow-hidden">
             <Image
               src={aboutImage}
@@ -35,7 +35,7 @@ const Services = () => {
 
           {/* service two */}
 
-            <m.div variants={fadeIn('down','tween',0.2,0.5)} initial="hidden" whileInView="show" viewport={{once:false, amount:0.5}} className="border shadow-xl rounded-md p-6 w-full xl:w-1/2 flex flex-col">
+            <m.div variants={fadeIn('down','tween',0.2,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="border shadow-xl rounded-md p-6 w-full xl:w-1/2 flex flex-col">
               <svg
                 width="36"
                 height="40"
@@ -60,7 +60,7 @@ const Services = () => {
             </m.div>
 
           {/* service three */}
-            <m.div variants={fadeIn('left','tween',0.5,0.5)} initial="hidden" whileInView="show" viewport={{once:false, amount:0.5}} className="shadow-xl border rounded-md p-6 w-full xl:w-1/2">
+            <m.div variants={fadeIn('left','tween',0.3,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="shadow-xl border rounded-md p-6 w-full xl:w-1/2">
               <svg
                 width="36"
                 height="40"
@@ -85,7 +85,7 @@ const Services = () => {
             </m.div>
           </div>
 
-        <m.div variants={fadeIn('up','tween',0.7,0.5)} initial="hidden" whileInView="show" viewport={{once:false, amount:0.3}} className="flex flex-col-reverse h-full border sm:flex-row   rounded-md shadow-xl">
+        <m.div variants={fadeIn('up','tween',0.4,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.1}} className="flex flex-col-reverse h-full border sm:flex-row   rounded-md shadow-xl">
             <div className="flex flex-col justify-center w-full sm:w-1/2 p-6 ">
             <h5 className="pb-2 text-2xl font-bold text-sky-800 mt-auto">Solar Equipments Supply</h5>
             <p className="text-gray-500">Streamlined Material Supply for Reliable Solar Installations</p>

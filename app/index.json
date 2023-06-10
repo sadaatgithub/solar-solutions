@@ -84,14 +84,16 @@
         {
             "id":1,
             "image":"/solar-hero.jpg",
-            "text":"Project One",
+            "text":"Vashwani Trader Nagpur",
+            "capacity":"18 KW",
             "cta":"Read More",
             "category":"Case Studies"
         },
         {
             "id":2,
             "image":"/solarimg.jpg",
-            "text":"Project Two",
+            "text":"Pannase (Powar Engineering)",
+            "capacity":"10 KW",
             "cta":"Read More",
             "category":"Installation"
     
@@ -99,31 +101,59 @@
         {
             "id":3,
             "image":"/solar-installation.jpg",
-            "text":"Project Three",
+            "text":"Pravin Raut",
+            "capacity":"3 KW",
             "cta":"Read More",
             "category":"Consultation"
         },
         {
             "id":4,
             "image":"/solarimg.jpg",
-            "text":"Project Four",
+            "text":"Wasudeo Thakare",
+            "capacity":"6 KW",
             "cta":"Read More",
             "category":"Installation"
         },
         {
             "id":5,
             "image":"/solar-hero.jpg",
-            "text":"Project Five",
+            "text":"Dhanraj Saha",
+            "capacity":"8 KW",
             "cta":"Read More",
             "category":"Case Studies"
         },
         {
             "id":6,
             "image":"/solar-installation.jpg",
-            "text":"Project Six",
+            "text":"Saroj Saha",
+            "capacity":"6 KW",
+            "cta":"Read More",
+            "category":"Installation"
+        },
+        {
+            "id":7,
+            "image":"/solarimg.jpg",
+            "text":"Choudhary Engineering",
+            "capacity":"21 KW",
             "cta":"Read More",
             "category":"Consultation"
+        },{
+            "id":8,
+            "image":"/solar-installation.jpg",
+            "text":"Shiware Atachakki",
+            "capacity":"25 KW",
+            "cta":"Read More",
+            "category":"Installation"
+        },
+        {
+            "id":9,
+            "image":"/solarimg.jpg",
+            "text":"Rahul Jivtode",
+            "capacity":"3 KW",
+            "cta":"Read More",
+            "category":"Installation"
         }
+
     ],
     "FAQs":[
         {

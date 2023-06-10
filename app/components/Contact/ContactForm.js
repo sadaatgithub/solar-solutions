@@ -15,9 +15,9 @@ const initialFormValue = {
 };
 const initialState = { isLoading: false, error: "", values: initialFormValue };
 
-const ContactForm = ({title,className,closeModal}) => {
+const ContactForm = ({title,className,closeModal,setIsSuccess}) => {
   const [state, setState] = useState(initialState);
-  const [isSuccess, setIsSuccess] = useState(false);
+  // const [isSuccess, setIsSuccess] = useState(true);
   const { isLoading, values, error } = state;
 
   const submitHandler = async (e) => {
@@ -26,7 +26,6 @@ const ContactForm = ({title,className,closeModal}) => {
       ...prev,
       isLoading: true,
     }));
-    console.log(values)
     try {
       await submitContactForm(values);
 
@@ -56,31 +55,23 @@ const ContactForm = ({title,className,closeModal}) => {
 
   return (
     <>
-    {isSuccess ? (
-      <div className="w-[90%] lg:w-2/5 bg-white px-4 md:px-16 py-6 text-slate-700 rounded-md  text-center flex items-center justify-center flex-col gap-6">
-        <FaCheckCircle className="text-2xl text-teal-500" />
-        <p>
-          Form submitted successfully.
-          <br /> We will get back to you soon..!
-        </p>
-      </div>
-    ) :(<form onSubmit={submitHandler}
+  <form onSubmit={submitHandler}
         action=""
         className={`${className || " "} z-10  text-gray-700 flex flex-col gap-6`}
       >
         <div className="flex flex-col sm:flex-row  gap-2 w-full">
           <div className="flex flex-col gap-2 sm:w-1/2 lg:w-full">
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" className="border p-2 focus:outline-orange-500 rounded-md" onChange={handleChange}/>
+          <input type="text" name="name" className="border p-2 focus:outline-orange-500 rounded-md" onChange={handleChange} required/>
           </div>
           <div className="flex flex-col gap-2 sm:w-1/2">
           <label htmlFor="name">Mobile no</label>
-          <input type="number" name="contact" className="border p-2 focus:outline-orange-500 rounded-md" onChange={handleChange}/>
+          <input type="number" name="contact" className="border p-2 focus:outline-orange-500 rounded-md" onChange={handleChange} required/>
           </div>
         </div>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="email">Email</label>
-          <input type="text" name="email" className="border p-2 focus:outline-orange-500 rounded-md" onChange={handleChange}/>
+          <input type="text" name="email" className="border p-2 focus:outline-orange-500 rounded-md" onChange={handleChange} required/>
         </div>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="message">Message</label>
@@ -106,8 +97,8 @@ const ContactForm = ({title,className,closeModal}) => {
             title
         }
         </button>
-      </form>)
-    }
+      </form>
+    
     </>
   )
 }

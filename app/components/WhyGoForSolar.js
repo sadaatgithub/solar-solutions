@@ -36,7 +36,7 @@ const benefits = [
 const WhyGoForSolar = () => {
   return (
     <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-20">
-      <m.div variant={container} initial="hidden" whileInView="show" viewport={{once:false, amount:0.3}} className="flex flex-col gap-6 col-span-full md:col-span-1">
+      <m.div variant={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-6 col-span-full md:col-span-1">
         <m.p  variants={textVariant(0.1)} className="font-semibold text-orange-500">BENEFITS</m.p>
         <m.h2 variants={textVariant(0.3)} className="text-5xl font-bold text-gray-800">Why Go For Solar</m.h2>
         <m.p variants={textVariant(0.5)} className="text-gray-500">
@@ -54,7 +54,7 @@ const WhyGoForSolar = () => {
       </m.div>
       <m.div variant={textContainer}   className="grid-col-1 md:col-span-2  grid  sm:grid-cols-2  md:gap-y-16 gap-12 gap-x-12 overflow-hidden">
         {benefits.map((benefit,idx) => (
-          <m.div variants={textVariant(idx*0.2)} initial="hidden" whileInView="show" viewport={{once:false, amount:0.3}}  key={benefit.id} className=" relative">
+          <m.div variants={textVariant(idx*0.2)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}  key={benefit.id} className=" relative">
             <div
               className="flex flex-col gap-6 sm:col-span-1 [&>svg]:text-4xl
            [&>svg]:text-orange-400 p-2 z-[10] [&>svg]:drop-shadow-md"

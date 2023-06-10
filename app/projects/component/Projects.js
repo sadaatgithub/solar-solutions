@@ -38,12 +38,13 @@ const Projects = () => {
             <motion.div layout className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 place-items-center mt-10">
                <AnimatePresence>
                 {filteredData.map(project =>
-                <motion.div layout animate={{opacity:1,scale:1}} initial={{opacity:0,scale:0}} exit={{opacity:0,scale:0}} key={project.id} className="h-96 relative after:absolute after:inset-0 after:content-[''] group after:bg-gradient-to-b after:from-transparent  after:to-black/60 max-w-lg overflow-hidden cursor-pointer">
+                <motion.div layout animate={{opacity:1,scale:1}} initial={{opacity:0,scale:0}} exit={{opacity:0,scale:0}} key={project.id} className="h-96 relative after:absolute after:inset-0 after:content-[''] group after:bg-gradient-to-b after:from-transparent  after:to-black/80 max-w-lg overflow-hidden cursor-pointer">
                     <Image src={project.image} width={480} height={480} alt="" className="w-full h-full object-cover"/>
                     <div className="absolute bottom-0 translate-y-8 opacity-0 z-10 left-0 right-0 transition-all flex flex-col gap-4 p-6  group-hover:translate-y-0 group-hover:transition-all
-                     group-hover:duration-500 group-hover:opacity-100">
+                     group-hover:duration-500 group-hover:opacity-100 text-white ">
                         <p className="text-gray-100 uppercase text-xs tracking-widest">{project.category}</p>
-                       <h3 className="text-white font-bold text-3xl"> {project.text}</h3>
+                       <h3 className=" font-bold text-3xl"> {project.text}</h3>
+                       <p className="text-2xl font-semibold">{project.capacity}</p>
                        <button className="text-white"><FaChevronRight/></button>
                     </div>
                 </motion.div>)}
