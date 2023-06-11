@@ -14,12 +14,12 @@ import DivTitle from "./common/heading/DivTitle";
 
 const AboutUs = () => {
   return (
-    <Container className="flex flex-col md:flex-row gap-10 lg:gap-20 w-full  min-h-screen">
+    <Container className="flex flex-col md:flex-row gap-10 lg:gap-20 w-full  min-h-screen overflow-hidden">
       <div className="flex flex-col gap-6 md:w-1/2 z-10">
-        <div className="flex flex-col gap-8">
-          <div   className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8 ">
+          <div className="flex flex-col gap-4 items-center md:items-start">
             <TopSubHeading text="Who We Are"/>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 items-center md:items-start">
               <DivTitle text="Powering a brighter future through solar innovation"/>
               <m.p variants={textVariant(0.3)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="text-lg text-gray-500">
                 Our mission is to make solar energy accessible to everyone. We
@@ -55,9 +55,10 @@ const AboutUs = () => {
           </Link>
           <m.div variants={textVariant(0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex gap-4 items-center">
             <FiPhoneCall  className="bg-orange-50 p-4 rounded-full font-thin w-12 h-12 text-orange-400"/>
-            <div className="flex flex-col">
-            <p className="text-gray-400">Have any questions?</p>
-            <p className="font-bold">(+91) 9832659865</p></div>
+            <ul className="flex flex-col">
+            <li className="text-gray-400">Have any questions?</li>
+            <li className="font-bold"><a href="tel:8484939335">(+91) 8484939335</a></li>
+            </ul>
 
           </m.div>
         </div>

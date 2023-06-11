@@ -6,6 +6,8 @@ import { GiReceiveMoney, GiEarthAmerica, GiSolarPower } from "react-icons/gi";
 import Link from "next/link";
 import { motion as m, AnimatePresence } from "framer-motion";
 import { fadeIn, container,textVariant,slideIn, textContainer } from "@/lib/animation";
+import TopSubHeading from "./common/heading/TopSubHeading";
+import DivTitle from "./common/heading/DivTitle";
 const benefits = [
   {
     id: 1,
@@ -35,11 +37,11 @@ const benefits = [
 
 const WhyGoForSolar = () => {
   return (
-    <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-20">
-      <m.div variant={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-6 col-span-full md:col-span-1">
-        <m.p  variants={textVariant(0.1)} className="font-semibold text-orange-500">BENEFITS</m.p>
-        <m.h2 variants={textVariant(0.3)} className="text-5xl font-bold text-gray-800">Why Go For Solar</m.h2>
-        <m.p variants={textVariant(0.5)} className="text-gray-500">
+    <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-y-20 lg:gap-x-20  w-full">
+      <m.div variant={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-6 col-span-full md:col-span-1 items-center lg:items-start  w-full">
+        <TopSubHeading text="Benefits"/>
+       <DivTitle text="Why Go For Solar"/>
+        <m.p variants={textVariant(0.5)} className="text-gray-500  text-center lg:text-start max-w-2xl">
           Switching to solar power is an effective way to reduce reliance on
           traditional fossil fuels and help combat climate change. In addition,
           solar energy can lead to significant long-term cost savings on energy
@@ -47,7 +49,7 @@ const WhyGoForSolar = () => {
           of the sun, you can not only reduce your carbon footprint but also
           improve your financial bottom line.
         </m.p>
-        <m.button variants={textVariant(0.7)} className="w-full md:max-w-[250px] self-start mt-4  px-6 py-3 bg-orange-500 text-white  rounded-sm shadow-2xl shadow-orange-200
+        <m.button variants={textVariant(0.7)} className="w-full md:max-w-[250px]  mt-4  px-6 py-3 bg-orange-500 text-white  rounded-sm 
         relative btn_overlay"><Link href="/contact">
         <span className="z-10">Get Free Consultation</span></Link>
         </m.button>
@@ -57,7 +59,7 @@ const WhyGoForSolar = () => {
           <m.div variants={textVariant(idx*0.2)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}  key={benefit.id} className=" relative">
             <div
               className="flex flex-col gap-6 sm:col-span-1 [&>svg]:text-4xl
-           [&>svg]:text-orange-400 p-2 z-[10] [&>svg]:drop-shadow-md"
+           [&>svg]:text-orange-400 p-2 z-[10] "
             >
               {benefit.icon}
               <h6 className="text-xl font-bold  text-sky-800 ">

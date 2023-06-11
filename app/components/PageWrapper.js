@@ -29,7 +29,9 @@ const PageWrapper = ({children}) => {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
       },
       exitState: {
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+        // clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+        clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+
         // opacity:0,
         // y:100,
       },

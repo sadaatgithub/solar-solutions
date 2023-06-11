@@ -12,7 +12,7 @@ const RecentProject = () => {
     const projects = config.projects
   return (
     <div className="flex flex-col gap-20 py-20">
-        <div className="flex flex-col gap-4 px-4 lg:px-20">
+        <div className="flex flex-col gap-4 px-4 lg:px-20 items-center">
            <TopSubHeading text="What We Do"/>
             <DivTitle text="Recent Projects"/>
         </div>

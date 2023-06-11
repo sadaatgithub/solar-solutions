@@ -168,11 +168,11 @@ const Page = () => {
               const isEven = content.id % 2
               return (
                 <div key={content.id}  className={`${ isEven? "md:flex-row-reverse":""} flex items-center flex-col-reverse md:flex-row gap-8  mx-auto overflow-hidden`}>
-                  <m.div variants={fadeIn('left','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:false, amount:0.3}} className="flex flex-col md:w-1/2 gap-4">
+                  <m.div variants={fadeIn(isEven?'left':'right','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col md:w-1/2 gap-4">
                 <h3 className="text-2xl font-bold text-gray-700"><span className="text-5xl text-orange-400 mr-3">{content.id}</span>{content.heading}</h3>
                 <p className="text-gray-500">{content.desc}</p>
                 </m.div>
-                <m.div variants={fadeIn('right','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="md:w-1/2">
+                <m.div variants={fadeIn(isEven? 'right':'left','spring',0.1,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="md:w-1/2">
                 <Image src={content.img} width={640} height={480} className="w-full" alt=""/>
                 </m.div>
                 </div>
