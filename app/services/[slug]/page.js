@@ -9,6 +9,7 @@ import MaterialSupply from '../component/MaterialSupply'
 import { motion as m } from 'framer-motion'
 import { fadeIn, slideIn, textVariant } from '@/lib/animation'
 import DivTitle from '@/app/components/common/heading/DivTitle'
+import Button from '@/app/components/common/heading/buttons/Button'
 
 const services = [
   {
@@ -64,7 +65,8 @@ const services = [
 
     ],
     footerHeading:`By choosing our solar work services, you can have peace of mind knowing 
-    that you are receiving top-notch expertise, reliable solutions, and long-term benefits. Experience the difference of our efficient and professional solar work tailored to meet your energy needs. Contact us today to discuss your solar project and take the first step towards a sustainable and cost-effective energy future.`
+    that you are receiving top-notch expertise, reliable solutions, and long-term benefits. Experience the difference of our efficient and professional solar work tailored to meet your energy needs. Contact us today to discuss your solar project and take the first step towards a sustainable and cost-effective energy future.`,
+    cta:"/contact"
   },
   {
     id:2,
@@ -98,7 +100,8 @@ const services = [
          img:"/solarVEctor.jpg",
       }
     ],
-    footerHeading:`By offering comprehensive HT and LT services, we aim to meet the diverse needs of our customers across a wide range of solar projects. Whether it's a large-scale utility installation or a residential system, we have the expertise and resources to deliver reliable, efficient, and cost-effective solutions. Contact us today to discuss your HT or LT solar requirements and let us help you harness the power of solar energy.`
+    footerHeading:`By offering comprehensive HT and LT services, we aim to meet the diverse needs of our customers across a wide range of solar projects. Whether it's a large-scale utility installation or a residential system, we have the expertise and resources to deliver reliable, efficient, and cost-effective solutions. Contact us today to discuss your HT or LT solar requirements and let us help you harness the power of solar energy.`,
+    cta:"/contact"
   },
   {
     id:3,
@@ -144,7 +147,8 @@ const services = [
         desc:`Our commitment to our customers extends beyond the initial consultation. We offer ongoing support throughout the entire solar journey, from the initial consultation to post-installation maintenance and monitoring. Our team is always available to answer any questions, address concerns, and provide ongoing assistance to ensure your solar system operates optimally.`
       }
     ],
-    footerHeading:`By choosing our solar consultation service, you can benefit from our expertise, industry insights, and personalized approach. We aim to empower you with the knowledge and confidence to make informed decisions about your solar energy project. Contact us today to schedule a solar consultation and take the first step toward a sustainable energy future.`
+    footerHeading:`By choosing our solar consultation service, you can benefit from our expertise, industry insights, and personalized approach. We aim to empower you with the knowledge and confidence to make informed decisions about your solar energy project. Contact us today to schedule a solar consultation and take the first step toward a sustainable energy future.`,
+    cta:"/contact"
 
   }
 ]
@@ -180,6 +184,11 @@ const Page = () => {
             })}
             <div className="">
              <p className="text-lg text-gray-600">{service.footerHeading}</p>
+            </div>
+            <div className="bg-orange-500 flex justify-around items-center py-16 gap-12 rounded-lg shadow-lg flex-col md:flex-row">
+              <h2 className="md:text-5xl text-3xl  font-bold text-white capitalize">Start your saving now...!</h2>
+              <Button text="Get in Touch" className="bg-white cursor-pointer"/>
+              
             </div>
         </div>
       ))}
