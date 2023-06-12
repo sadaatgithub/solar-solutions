@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
  
 export async function POST(request) {
 
- 
+ console.log("received")
 const data = await request.json();
         if(!data || !data.name || !data.email || !data.contact || !data.message ){
              return NextResponse.json({status:400,message:"Bad request"})  

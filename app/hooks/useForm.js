@@ -1,9 +1,12 @@
 import { useState,useEffect } from 'react';
+import { submitContactForm } from '@/lib/submitContactForm';
+
 
 const useForm = (initialState, onSubmit) => {
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted,setIsSubmitted] = useState(false)
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -13,24 +16,30 @@ const useForm = (initialState, onSubmit) => {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // setErrors(validate(values));
-    setIsSubmitting(true);
+    setIsSubmitting(true)
+    try {
+     await submitContactForm(values)
+      setValues(initialState);
+      setIsSubmitted(true)
+      setIsSubmitting(false);
+
+    } catch (error) {
+      console.log(error)
+    }
+
   };
 
   useEffect(() => {
-    // && Object.keys(errors).length === 0
-    if (isSubmitting ) {
-      onSubmit();
-      setValues(initialState);
-      setIsSubmitting(false);
-    }
-  }, [errors, initialState, isSubmitting, onSubmit]);
+    
+  }, [errors, initialState, isSubmitting, onSubmit,isSubmitted]);
 
   return {
     values,
     errors,
+    isSubmitted,
+    isSubmitting,
     handleChange,
     handleSubmit,
   };
