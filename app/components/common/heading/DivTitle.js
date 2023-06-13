@@ -5,7 +5,7 @@ import { textVariant } from '@/lib/animation'
 
 const DivTitle = ({text}) => {
   return (
-    <m.h2  variants={textVariant(0.3)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.5}} className="text-5xl font-bold text-gray-700 capitalize text-center md:text-start">{text}</m.h2>
+    <m.h2  variants={textVariant(0.3)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.5}} className="text-4xl md:text-5xl font-bold text-gray-700 capitalize text-center md:text-start">{text}</m.h2>
   )
 }
 

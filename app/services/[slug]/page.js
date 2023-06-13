@@ -9,7 +9,7 @@ import MaterialSupply from '../component/MaterialSupply'
 import { motion as m } from 'framer-motion'
 import { fadeIn, slideIn, textVariant } from '@/lib/animation'
 import DivTitle from '@/app/components/common/heading/DivTitle'
-import Button from '@/app/components/common/heading/buttons/Button'
+import Button from '@/app/components/common/buttons/Button'
 
 const services = [
   {

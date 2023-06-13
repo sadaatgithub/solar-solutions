@@ -21,14 +21,14 @@ const ContactFormDetails = ({title}) => {
         </p>
         <div className="flex flex-col gap-4 text-gray-700">
           <div className="flex gap-4 items-center font-semibold">
-            <TfiEmail className="text-orange-400" />{" "}
+            <TfiEmail  className="text-orange-400 font-bold" />{" "}
             <p>solutionsolar42@gmail.com</p>
           </div>
           <div className="flex gap-4 items-center font-semibold">
-            <TfiMobile className="text-orange-400" /> <p>9898653265</p>
+            <TfiMobile  className="text-orange-400" /> <p>8484939335</p>
           </div>
           <div className="flex gap-4 items-center font-semibold">
-            <TfiLocationPin className="text-orange-400" />{" "}
+            <TfiLocationPin  className="text-orange-400" />{" "}
             <p>Bhavani Nagar, Paradi,Nagpur</p>
           </div>
         </div>

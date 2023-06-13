@@ -8,6 +8,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { fadeIn, container,textVariant,slideIn, textContainer } from "@/lib/animation";
 import TopSubHeading from "./common/heading/TopSubHeading";
 import DivTitle from "./common/heading/DivTitle";
+import DottedAbstract from "./common/DottedAbstract";
 const benefits = [
   {
     id: 1,
@@ -37,7 +38,8 @@ const benefits = [
 
 const WhyGoForSolar = () => {
   return (
-    <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-y-20 lg:gap-x-20  w-full">
+    <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-y-20 lg:gap-x-20  w-full relative bg-white">
+      <DottedAbstract className="-right-10 top-10"/>
       <m.div variant={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-6 col-span-full md:col-span-1 items-center lg:items-start  w-full">
         <TopSubHeading text="Benefits"/>
        <DivTitle text="Why Go For Solar"/>
