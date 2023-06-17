@@ -4,6 +4,7 @@ import AboutUs from '../components/AboutUs'
 import PagePathBanner from '../components/PagePathBanner'
 import PageWrapper from '../components/PageWrapper'
 import Testimonials from '../components/Testimonials'
+import OurServices from '../components/OurServices'
 
 export const metadata = {
   title: {
@@ -21,6 +22,7 @@ const About = () => {
     <PagePathBanner/>
     <AboutUs/>
     <AboutStat/>
+    <OurServices/>
     <Testimonials/>
     </PageWrapper>
   

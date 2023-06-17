@@ -14,7 +14,7 @@ const Footer = () => {
 
             <ul className="flex w-full justify-center gap-8">
             <li><Link href="/about">About</Link></li>
-            <li><Link href="">Services</Link></li>
+            <li>Services</li>
             <li><Link href="/contact">Contact Us</Link></li>
             </ul>
         

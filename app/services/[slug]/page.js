@@ -170,7 +170,7 @@ const Page = () => {
       <Container className="min-h-screen ">{service.map(service => (
         <div key={service.id} className="flex flex-col gap-20 mx-auto ">
             <div className="flex flex-col gap-6 text-center">
-              <DivTitle text={service.title}/>
+              <DivTitle text={service.title} className="!text-center"/>
             <m.p variants={textVariant(0.1)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="text-xl text-gray-500">{service.subheading}</m.p>
             </div>
             {service.content.map(content =>{

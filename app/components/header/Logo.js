@@ -12,7 +12,7 @@ const Logo = () => {
     <div className=" w-full  ">
       {" "}
       <Link href="/" className="flex gap-2">
-      <Image src={logo} alt="solar solutions logo" width={55} height={40} className="w-auto h-auto"/>
+      <Image src={logo} alt="solar solutions logo" width={55} height={40} className="w-14 h-14"/>
       <div className="flex flex-col">
         <h1 className={`${rye.className} text-2xl font-rye  text-orange-500`}>Solar Solutions</h1>
   <p className={`${satisfy.className} text-sm text-gray-500 font-satisfy`}>By Choudhary Engineering</p>
