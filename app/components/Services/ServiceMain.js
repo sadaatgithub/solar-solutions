@@ -19,8 +19,8 @@ const Services = () => {
               className="w-full h-full object-cover "
             />
           </div>
-          <div className="p-6">
-            <h3 className="font-bold pb-6 text-[40px] text-sky-800">Solar Work</h3>
+          <div className="p-6 bg-white">
+            <h3 className="font-bold pb-6 text-[40px] text-sky-800 ">Solar Work</h3>
             <p className="text-gray-500">
             Our solar installation service provides expert design and installation of custom solar energy solutions for residential and commercial clients. 
             Our licensed professionals ensure a seamless installation process and long-term performance optimization.
@@ -60,7 +60,7 @@ const Services = () => {
             </m.div>
 
           {/* service three */}
-            <m.div variants={fadeIn('left','tween',0.3,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className=" border rounded-md p-6 w-full xl:w-1/2">
+            <m.div variants={fadeIn('left','tween',0.3,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className=" border rounded-md p-6 w-full xl:w-1/2 bg-white">
               <svg
                 width="36"
                 height="40"
@@ -85,7 +85,7 @@ const Services = () => {
             </m.div>
           </div>
 
-        <m.div variants={fadeIn('up','tween',0.4,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.1}} className="flex flex-col-reverse h-full border sm:flex-row   rounded-md">
+        <m.div variants={fadeIn('up','tween',0.4,0.5)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.1}} className="flex flex-col-reverse h-full border sm:flex-row bg-white  rounded-md">
             <div className="flex flex-col justify-center w-full sm:w-1/2 p-6 ">
             <h5 className="pb-2 text-2xl font-bold text-sky-800 mt-auto">Solar Equipments Supply</h5>
             <p className="text-gray-500">Streamlined Material Supply for Reliable Solar Installations</p>

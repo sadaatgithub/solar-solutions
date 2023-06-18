@@ -39,11 +39,14 @@ const benefits = [
 const WhyGoForSolar = () => {
   return (
     // variant={container} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}
-    <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-y-20 lg:gap-x-20  w-full relative bg-white">
+    <Container  className="min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-y-20 lg:gap-x-20  w-full relative ">
       <DottedAbstract className="-right-10 top-10"/>
       <div className="flex flex-col gap-6 col-span-full md:col-span-1 items-center lg:items-start  w-full">
         <TopSubHeading text="Benefits"/>
+        <div className="relative">
        <DivTitle text="Why Go For Solar"/>
+       <div className="hidden lg:block absolute left-[90%] top-0 bg-[url('../public/arrow.svg')] w-24 h-24 bg-no-repeat bg-contain "></div>
+       </div>
         <m.p variants={textVariant(0.1)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}} className="text-gray-500  text-center lg:text-start max-w-2xl">
           Switching to solar power is an effective way to reduce reliance on
           traditional fossil fuels and help combat climate change. In addition,
@@ -57,7 +60,7 @@ const WhyGoForSolar = () => {
         <span className="z-10">Get Free Consultation</span></Link>
         </m.button>
       </div>
-      <m.div variant={textContainer}   className="grid-col-1 md:col-span-2  grid  sm:grid-cols-2  md:gap-y-16 gap-12 gap-x-12 overflow-hidden">
+      <m.div variant={textContainer}   className="grid-col-1 md:col-span-2  grid  sm:grid-cols-2  md:gap-y-16 gap-12 gap-x-12 overflow-hidden ">
         {benefits.map((benefit,idx) => (
           <m.div variants={textVariant(idx*0.2)} initial="hidden" whileInView="show" viewport={{once:true, amount:0.3}}  key={benefit.id} className=" relative">
             <div

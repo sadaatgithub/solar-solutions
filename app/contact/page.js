@@ -4,6 +4,7 @@ import PageWrapper from '../components/PageWrapper'
 import Container from '../components/Container'
 import ContactFormDetails from '../components/Contact/ContactFormDetails'
 import ContactForm from '../components/Contact/ContactForm'
+import AnimateComponent from '../components/animate/AnimateComponent'
 
 
 export const metadata = {
@@ -18,9 +19,13 @@ const Contact = () => {
   return (
     <PageWrapper>
     <PagePathBanner/>
-      <Container className="flex gap-20 flex-col md:flex-row">
+      <Container className="flex gap-20 flex-col md:flex-row w-full">
+        <AnimateComponent className="w-full" type="right">
         <ContactFormDetails title="Dont Hesitate to contact us"/>
-        <ContactForm title="Send Message" className="md:w-1/2 w-full"/>
+        </AnimateComponent>
+        <AnimateComponent className="w-full" type="left">
+        <ContactForm title="Send Message" className="w-full"/>
+        </AnimateComponent>
       </Container>
     </PageWrapper>
   )

@@ -5,7 +5,7 @@ import ServiceMain from "./Services/ServiceMain";
 
 const OurServices = () => {
   return (
-    <Container className="flex flex-col gap-20 items-center">
+    <Container className="flex flex-col gap-20 items-center ">
       <ServiceHeader/>
       <ServiceMain/>
     </Container>

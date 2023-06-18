@@ -22,7 +22,7 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial,idx) => 
-        <m.div key={idx} variants={fadeIn('up','tween',0.1*idx,0.5)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-6 p-8  rounded-md shadow-md border shadow-gray-100 bg-white">
+        <m.div key={idx} variants={fadeIn('up','tween',0.1*idx,0.3)} initial="hidden"  whileInView="show" viewport={{once:true, amount:0.3}} className="flex flex-col gap-6 p-8  rounded-md shadow-md border shadow-gray-100 bg-white">
                  <div className="flex text-orange-400"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></div>
                  <p className="text-gray-500">{testimonial.text}</p>
                  <div className="flex items-center  gap-4 mt-auto">
@@ -35,7 +35,7 @@ const Testimonials = () => {
                   <p className="font-medium text-gray-900">
                      {testimonial.name}
                   </p>
-                  <p className="text-orange-300">
+                  <p className="text-gray-400 text-sm">
                     {testimonial.designation}
                   </p>
                   </div>

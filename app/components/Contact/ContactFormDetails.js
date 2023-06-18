@@ -9,7 +9,7 @@ import {
 
 const ContactFormDetails = ({title}) => {
   return (
-    <div className="flex flex-col z-10 text-black gap-6 md:w-1/2 ">
+    <div className="flex flex-col z-10 text-black gap-6">
         <p className="text-orange-500 uppercase font-semibold">Get in Touch</p>
         <h2 className="text-4xl font-bold text-sky-800 capitalize">
          {title}

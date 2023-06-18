@@ -12,36 +12,11 @@ const initialFormValue = {
   contact: "",
   message: "",
 };
-// const initialState = { isLoading: false, error: "", values: initialFormValue };
 
 const ContactForm = ({ title, className, closeModal }) => {
-  // const [state, setState] = useState(initialState);
   const [isSuccess, setIsSuccess] = useState(false);
-  // const { isLoading, values, error } = state;
   const isLoading = false;
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setState((prev) => ({
-  //     ...prev,
-  //     isLoading: true,
-  //   }));
-  //   try {
-  //     await submitContactForm(values);
-
-  //     setState(initialState);
-  //     setIsSuccess(true);
-  //     setTimeout(() => {
-  //       setIsSuccess(false);
-  //       closeModal(false)
-  //     }, 5000);
-  //   } catch (error) {
-  //     setState((prev) => ({
-  //       ...prev,
-  //       isLoading: false,
-  //       error: error.message,
-  //     }));
-  //   }
-  // };
+  
   const {
     values,
     errors,
@@ -69,15 +44,7 @@ const ContactForm = ({ title, className, closeModal }) => {
       
   }, [isSubmitted]);
 
-  // const handleChange = (e) =>{
-  //   const {name,value} = e.target;
-  //   setState((prev) =>({
-  //     ...prev,values:{
-  //       ...prev.values,
-  //       [name]:value,
-  //     }
-  //   }))
-  // }
+ 
 
   return (
     <>
