@@ -42,7 +42,7 @@ const ContactForm = ({ title, className, closeModal }) => {
           : null)
       : null;
       
-  }, [isSubmitted]);
+  }, [isSubmitted,closeModal]);
 
  
 

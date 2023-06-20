@@ -2,7 +2,6 @@
 import React from 'react'
 import Container from '@/app/components/Container'
 import PageWrapper from '@/app/components/PageWrapper'
-import { useParams } from 'next/navigation'
 import PagePathBanner from '@/app/components/PagePathBanner'
 import Image from 'next/image'
 import MaterialSupply from '../component/MaterialSupply'
@@ -158,16 +157,22 @@ const services = [
   }
 ]
 
-const Page = () => {
+async function getPage(slug){
+  const res = await services.filter(service => service.slug === slug)
+console.log(res)
+  return res
+}
+const Page = async ({params}) => {
 
-
-    const {slug} = useParams()
-    const service = services.filter(service => service.slug === slug)
+const data = await getPage(params.slug)
+console.log(data)
+    // const {slug} = useParams()
+    // const service = services.filter(service => service.slug === params.slug)
   return (
     <PageWrapper>
       <PagePathBanner/>
-      {slug != "solar-material-supply"? 
-      <Container className="min-h-screen ">{service.map(service => (
+      {params.slug != "solar-material-supply"? 
+      <Container className="min-h-screen ">{data?.map(service => (
         <div key={service.id} className="flex flex-col gap-20 mx-auto ">
             <div className="flex flex-col gap-6 text-center">
               <DivTitle text={service.title} className="!text-center"/>
